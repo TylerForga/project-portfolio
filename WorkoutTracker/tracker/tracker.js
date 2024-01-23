@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
             //remove the submission at the specified index
             storedSubmissions[dateKey].splice(index, 1);
             //update sessionStorage
-            localStosessionStoragerage.setItem("submissions", JSON.stringify(storedSubmissions));
+            sessionStorage.setItem("submissions", JSON.stringify(storedSubmissions));
 
           
             //check if the array is empty
