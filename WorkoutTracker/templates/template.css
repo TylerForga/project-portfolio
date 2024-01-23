@@ -87,7 +87,3 @@ body::before {
     background-color: tan;
     text-align: center;
 }
-.website-footer a{
-    position: absolute;
-    left: 0;
-}
