@@ -1,5 +1,5 @@
 // declare storedSubmissions globally
-let storedSubmissions = JSON.parse(localStorage.getItem("submissions")) || {};
+let storedSubmissions = JSON.parse(sessionStorage.getItem("submissions")) || {};
 
 document.addEventListener("DOMContentLoaded", function () {
     //create variables for html elements
@@ -129,17 +129,17 @@ document.addEventListener("DOMContentLoaded", function () {
         return months[monthIndex];
     }
 
-    //function for deleting user submissions from localstorage
+    //function for deleting user submissions from sessionStorage
     function deleteSubmissionEntry(dateKey, index) {
         //remove the submission at the specified index
-        storedSubmissions = JSON.parse(localStorage.getItem("submissions")) || {};
+        storedSubmissions = JSON.parse(sessionStorage.getItem("submissions")) || {};
 
         //check if there are submissions for the given date
         if (storedSubmissions[dateKey]) {
             //remove the submission at the specified index
             storedSubmissions[dateKey].splice(index, 1);
-            //update localStorage
-            localStorage.setItem("submissions", JSON.stringify(storedSubmissions));
+            //update sessionStorage
+            localStosessionStoragerage.setItem("submissions", JSON.stringify(storedSubmissions));
 
           
             //check if the array is empty
@@ -147,8 +147,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 //if empty, delete the property from storedSubmissions
                 delete storedSubmissions[dateKey];
 
-                //update localStorage again to reflect the property removal
-                localStorage.setItem("submissions", JSON.stringify(storedSubmissions));   
+                //update sessionStorage again to reflect the property removal
+                sessionStorage.setItem("submissions", JSON.stringify(storedSubmissions));   
             }
             //refresh the display
             generateCalendar(new Date());
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function handleDayClick(dateKey) {
 
-        storedSubmissions = JSON.parse(localStorage.getItem("submissions"));
+        storedSubmissions = JSON.parse(sessionStorage.getItem("submissions"));
         const entryResultsDateTitle = document.getElementById('entry-results-date-title');
 
         //check if there are submissions for the given date
@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const recommendInput = document.getElementById("yes-recommend");
 
         
-        //create object with form data to store in localstorage
+        //create object with form data to store in sessionStorage
         //the user inputted date will be the unique key 
 
         const formDate = dateInput.value;
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!storedSubmissions[formDate]) {
             storedSubmissions[formDate] = [];
         }
-        //add new values to array under date property in localstorage storedSubmission's object
+        //add new values to array under date property in sessionStorage storedSubmission's object
         storedSubmissions[formDate].push ({
             type: typeInput.value,
             title: titleInput.value,
@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
             recommend: recommendInput.checked ? "Yes" : "No",
         });
 
-        localStorage.setItem("submissions", JSON.stringify(storedSubmissions));
+        sessionStorage.setItem("submissions", JSON.stringify(storedSubmissions));
 
         //refresh the calendar and clear form data
         generateCalendar(new Date());
