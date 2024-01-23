@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" >
+    <title>Tyler Forga's Bio</title>
+
+</head>
+<body>
+    <div class="container content-wrapper">
+        <div class="row">
+
+            <!-- contact information column -->
+            <div class="col-md-4 mb-2 mb-md-0 align-self-start contact-column">
+                <div class="border rounded-4 p-4 contact-info-wrapper">
+                    <img src="/images/TylerForgaPicture.jpg" alt="Tyler Forga's Photo" class="img-fluid">
+                    <!-- contact information -->
+                    <div class="col text-center text-break contact-info">
+                        <h1>Tyler Forga</h1>
+                        <h2>Contact Information</h2>
+
+                        <div class="separator"></div>
+
+                        <section class="contact-item">
+                            <img src="images/email.png" class="icon">
+                            <p> forgatyler@gmail.com</p>
+                        </section>
+
+                        <section class="contact-item">
+                            <img src="images/phone-call.png" class="icon">
+                            <p>(651) 361-0950</p>
+                        </section>
+
+                        <section class="contact-item">
+                            <img src="images/location.png" class="icon">
+                            <p> Lakeville, MN</p>
+                        </section>
+                    </div>
+                        
+                    <!-- Add more contact information as needed -->
+                    <div id="icon-attributes">
+                        <a href="https://www.flaticon.com/free-icons/phone-call" title="phone call icons">Phone call icons created by Ilham Fitrotul Hayat - Flaticon</a>
+                        
+                        <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Those Icons - Flaticon</a>
+                        
+                        <a href="https://www.flaticon.com/free-icons/location" title="location icons">Location icons created by Freepik - Flaticon</a>
+                    </div>
+                </div>
+            </div>
+        
+
+            <!-- individual pages column containing navbar -->
+            <div class="col-md-8 pages-column ">
+                <!-- pages navigation -->
+                <nav class="navbar navbar-expand-md navbar-light bg-light border border-bottom-0 border-secondary">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="about-nav-link" onclick="showPage('about')">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="workout-website-nav-link" onclick="showPage('workout-website')">Workout Tracker Website</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="concert-app-nav-link" onclick="showPage('concert-app')">Concert Tracker App</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- about page content-->
+                <div class="border border-secondary border-top-0 rounded-bottom-4 pt-2 px-4 individual-page-content" id="about">
+                    <h2>About Me</h2>
+                    <p>
+                        I am currently in school learning to become a software developer but the scope of my learning extends beyond
+                        the classroom and into exploring technologies on my own leisure. My current skillset consists of: 
+                        <br/>Markup languages- HTML5 and CSS3
+                        <br/>Programming languages- Javascript, Java, C#, and PHP
+                        <br/>Frameworks- .NET, Bootstrap, and jQuery
+                        <br/>Databases- mySQL, MariaDB, MongoDB, Access
+                        <br/>Tools- IDEs (VS Code, Visual Studio 2019, Eclipse) and Database Tools (phpMyAdmin)
+                        <br/>Version Control- Git, GitHub, Bitbucket
+                        <br/>
+                        I have a strong understanding of Object Orientated Programming and the Software Development Life Cycle, and book 
+                        knowledge about traditional and Agile methodologies such as the Waterfall Model and Scrum. I am familiar with 
+                        the Model-View-Controller architectural design pattern.
+                        In addition to my current college courses' cirrculum, my future learning will consist of adding frameworks of 
+                        JavaScript to my skillset. The next immediate frameworks I plan on studying are React.js, Node.js, and Jest. 
+                    </p>
+                    <p>
+                        While I don't have any professional experience to show yet, I have been working on personal projects outside of 
+                        school projects. I have created a desktop application called Concert Tracker and a website called Workout Tracker. 
+                        I will be adding on to each as well as creating new websites and applications to showcase 
+                        my knowledge. You can view these projects and follow along with my progression and future plans for them.
+                    </p>
+                    <p>
+                        Outside of my learning endeavors and project work, I enjoy quality time with family and friends. My interests 
+                        include outdoor activities like hiking, fishing, and hunting as well as daily activities such as working out 
+                        and reading about new and upcoming technologies. Not only do I enjoy researching new and upcoming technologies, 
+                        I believe it's essential for professionals in the software industry to do so.
+                    </p>
+                </div>
+                <!-- workout project content -->
+                <div class="border border-secondary border-top-0 rounded-bottom-4 pt-2 px-4 individual-page-content" id="workout-website">
+                    <h2>Workout and Macros Tracker Website</h2>
+                    <p>
+                        This website contains a Homepage, a Workout page, a Tracker page for workouts and macros, and an About page. 
+                        This website uses HTML, CSS, and pure JavaScript. It's fully responsive, has CSS animations, and contains dynamic content.  
+                        I chose GitHub pages as my webhost, but they only allow static content so I couldn't integrate a database. The way I could 
+                        include dynamic content is by utilizing session storage which works in GitHub pages. 
+                    </p>
+                    <p>
+                        The Homepage consists of information about the site and picture columns. Under a width of 940 pixels, the picture columns
+                        turn to individual pictures that rotate through all the pictures at a 5 second interval. Currently when you resize the 
+                        page in the browser developer tool, it will show all 5 pictures and you will need to refresh the page in order for it 
+                        to work. 
+                    </p>
+                    <p>
+                        The Workouts page consists of a form that allows users to search and filter exercises. Right now for visual demonstration purposes only, 
+                        the workouts are hard coded in so functionality of the form does not work right now. Until I integrate a database, it will be 
+                        non-functional.
+                    </p>
+                    <p>
+                        The Macro & Workout Tracker page consists of instructions on how to use the form, a form, and a dynamic calendar. Upon submitting a 
+                        entry in the form, it will alter the background color of the cell in the calendar for the date you created an entry for. Clicking 
+                        the cell will output all the entries for that date underneath the calendar. 
+                    </p>
+                    <p>
+                        The About page consists of information about the creation of the website, a little bit about me, and a questions, comments, and 
+                        concerns form for users to submit entries to me. Until I integrate a database, it is non-functional and for visual demonstration 
+                        purposes only.
+                    </p>
+                    <p>
+                        Future plans for this website is to integrate a database and user accounts. Doing so will allow users to be able to 
+                        save their entries, add their own workouts and share workouts with other users. It will also allow me to add 
+                        functionality to search and filter exercises on the Workouts page, as well as add functionality to the questions, 
+                        comments, or concerns form under the About page.
+                    </p>
+                    <section class="text-center">
+                        <a href="WorkoutTracker/homepage/homepage.html">View it here</a>
+                        <br/>
+                        <p>***To return back to this webpage please click the link in the bottom left of the footer***</p>
+                    </section>
+                </div>
+      
+                <!-- concert app content -->
+                <div class="border border-secondary border-top-0 rounded-bottom-4 pt-2 px-4 individual-page-content" id="concert-app">
+                    <h2>Concert Tracker App</h2>
+                    <section class="clearfix">
+                        <img src="/images/ConcertTrackerScrnshotHomePage.PNG" class="col-12 col-md-6 float-md-end mb-3 ms-md-3" alt="pic-of-application-homepage">
+                        <p>
+                            The Concert Tracker App was created using the .NET framework of C# in Visual Studio. This application allows users
+                            to search concerts or events provided by Ticketmaster. Users can search by the name of an event or artist, 
+                            the name of a venue, the genre of the music, and/or the state. This application uses 3 different endpoints 
+                            under Ticketmaster's Discovery API such as the Event Search endpoint, the Venue Search endpoint, and the Classification 
+                            endpoint. The reason for this is because their Event Search endpoint doesn't support query parameters such as a 
+                            venue name or genre name but does support query parameters such as venue ids and genre ids. 
+                        </p>
+                    </section>
+                    <section class="clearfix">
+                        <a href="images/ViewConcertsScreenshot.PNG" target="_blank">
+                            <img src="/images/ViewConcertsScreenshot.PNG" class="col-12 col-md-6 float-md-start mb-3 me-md-3" alt="pic-of-application-homepage">
+                        </a>
+                        <p>
+                            Clicking Search will open a new window with data based on the search criteria. An example output is shown 
+                            (click to view it fullscreen) with the search criteria of country for the music genre and MN for the state. The table will show data for 
+                            the event name, the venue name, the state, the date of the event, the cheapest price and most expensive price 
+                            for a ticket, a link to purchase the tickets (double click to open), and a save button (for a future release).
+                        </p>
+                    </section>
+                    <section>
+                        Future updates for this application include integration of a database to be able to store and save concerts.
+                        This will include a price analysis for each concert as well. A help menu item will also be added to further 
+                        explain the application or answer common questions.
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script> 
+        function showPage(pageName) {
+            // hide all project content
+            document.querySelectorAll('.individual-page-content').forEach(function (content) {
+            content.style.display = 'none';
+            });
+
+            // show the selected page content
+            const selectedProject = document.getElementById(pageName);
+            if (selectedProject) {
+            selectedProject.style.display = 'block';
+            }
+
+            // remove the 'selected' class from all nav items
+            document.querySelectorAll('.nav-link').forEach(function (navItem) {
+                navItem.style.color = '';
+            });
+
+            // add the 'selected' class to the clicked nav item
+            const selectedNavItem = document.getElementById(`${pageName}-nav-link`);
+            if (selectedNavItem) {
+                selectedNavItem.style.color = 'orange';
+            }
+        }
+
+        //show about page on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            showPage('about');
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-rHM/GTpXo1rH4cJ8dXf95wbGQAcB2mIXBTJXykI9xQFha5C1WfwnE5kUw5DwEy" crossorigin="anonymous"></script>
+</body>
+</html>

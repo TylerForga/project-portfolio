@@ -1,0 +1,120 @@
+<!--
+    Author: Tyler Forga 
+    Date: 1/16/2023 
+-->
+<!--HTML Boilerplate and title-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Workout Website</title>
+    <link rel="stylesheet" href="/WorkoutTracker/templates/template.css" >
+    <link rel="stylesheet" href="/WorkoutTracker/templates/template_responsive.css" >
+    <link rel="stylesheet" href="/WorkoutTracker/homepage/index.css" >
+    <link rel="stylesheet" href="/WorkoutTracker/homepage/homepage_pictureColumns.css" >
+    <link rel="stylesheet" href="/WorkoutTracker/homepage/homepage_responsive.css" >
+</head>
+<body>
+    <div id="background-image"></div>
+    <!--Header of website: title, imgs, navbar-->
+    <header class="website-header">
+        <!--title and images-->
+        <div class="title-wrapper">
+            <img id="left-image"src="/WorkoutTracker/Images/WorkoutWebsiteLogo.png" alt="Forga's Logo" >
+            <h1> 
+                Forga's Workout and Macros Tracker
+            </h1>
+            <img id="right-image"src="/WorkoutTracker/Images/WorkoutWebsiteLogo.png" alt="Forga's Logo" >
+        </div>
+            <!--Navigation-->
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="/WorkoutTracker/homepage/homepage.html">Homepage</a></li>
+                <li><a href="/WorkoutTracker/workouts/workouts.html">Workouts</a></li>
+                <li><a href="/WorkoutTracker/tracker/tracker.html">Macros & Workout Tracker</a></li>
+                <li><a href="/WorkoutTracker/about/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+    <!-- Intro section of the website with picture columns -->
+    <div id="content-wrapper">
+        
+        <div class="picture-column-left">
+            <a href="/WorkoutTracker/Images/workoutPic1.png">
+                <img src="/WorkoutTracker/Images/workoutPic1.png" alt="Workout photo">
+            </a>
+            <a href="/WorkoutTracker/Images/workoutPic2.png">
+                <img src="/WorkoutTracker/Images/workoutPic2.png" alt="Workout photo">
+            </a>
+            <a href="/WorkoutTracker/Images/workoutPic3.png">
+                <img src="/WorkoutTracker/Images/workoutPic3.png" height="170" alt="Workout photo">
+            </a>
+            <a href="/WorkoutTracker/Images/workoutPic4.png">
+                <img src="/WorkoutTracker/Images/workoutPic4.png" alt="Workout photo">
+            </a>
+            <a href="/WorkoutTracker/Images/workoutPic5.png">
+                <img src="/WorkoutTracker/Images/workoutPic5.png" alt="Workout photo">
+            </a>
+        </div>
+
+        <div class="homepage-about-content">
+            <h2>What does this website do?</h2>
+            <p>
+                This website allows you to learn new workouts and track your workouts and/or meals daily. You can search workouts by name or by which muscle group you want
+                to workout under Workouts. The Macros and Workout Tracker allows you to add what you ate daily in order to track your macros. It allows you to
+                add what workouts you did as well. Click on the <b>Workouts</b> or <b>Macros & Workout Tracker</b> tab at the top to get started. 
+                <br/><br/>
+                <i>
+                    *This is only a partially working demo of the website. Some functionalities will not work due to being hosted on Github and 
+                    Github only serving static webpages.*
+                </i>
+            </p>
+            <h2>Future releases/updates for this website</h2>
+            <p>
+                Future releases and updates for this website include hosting on a different webhost other than Github. By obtaining a different webhost enables me 
+                to connect to a database and will allow me to integrate user accounts, allow searching for workouts as well as enable users to add their own workouts, 
+                and allow me to be able to save and retrieve your data you input into the Macro and Workout Tracker. 
+            </p>
+            <h2>Functionalities currently unusable</h2>
+            <p>
+                <li>
+                    The Macros and Workout Tracker will only save your data during the current visit to this website. Upon closing out of this website, your data in 
+                    the calendar will be lost. 
+                </li>
+                <li>
+                    The Workouts page does not support searching for workouts by muscle group and is unavailable until I find a webhost that allows me to connect to a database. 
+                </li>
+                <li>
+                    The About page will not allow you to send me questions, comments or concerns until I find a webhost that allows me to connect to a database. 
+                </li>
+            </p>
+        </div>
+
+
+        <div class="picture-column-right">
+            <a href="/WorkoutTracker/Images/foodPic2.png">
+                <img src="/WorkoutTracker/Images/foodPic2.png" alt="Food photo">
+            </a>
+            <a href="/WorkoutTracker/Images/foodPic3.png">
+                <img src="/WorkoutTracker/Images/foodPic3.png" alt="Food photo">
+            </a>
+            <a href="/WorkoutTracker/Images/foodPic4.png">
+                <img src="/WorkoutTracker/Images/foodPic4.png" height="135" alt="Food photo">
+            </a>
+        </div>
+    </div>
+
+    <script src="/WorkoutTracker/homepage/homepage_galleries_under940px.js"></script>
+
+    <!--Footer section with copyright-->
+    <footer class="website-footer">
+        <a href="/index.html">Back to Bio and Project Webpage</a>
+        Created and maintained by Tyler Forga &copy;2023
+    </footer>
+</body>
+</html>

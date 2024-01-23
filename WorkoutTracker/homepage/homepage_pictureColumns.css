@@ -1,0 +1,10 @@
+.picture-column-left,
+.picture-column-right{
+    width: 230px;
+    flex-direction: column;
+    background-color: white;
+}
+.picture-column-right img,
+.picture-column-left img{
+    width: 100%;
+}

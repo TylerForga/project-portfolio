@@ -1,0 +1,127 @@
+<!--
+    Author: Tyler Forga 
+    Date: 1/16/2023 
+    Filename: tracker.html 
+    Create a calendar where you can add workouts and micros or calories to each day and select viewing options for viewing them. 
+    TODO: Add option to upload pictures for progression.
+-->
+<!--HTML Boilerplate and title-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Workout Website</title>
+    <link rel="stylesheet" href="/WorkoutTracker/templates/template.css" >
+    <link rel="stylesheet" href="/WorkoutTracker/templates/template_responsive.css" >
+    <link rel="stylesheet" href="tracker_calendar.css" >
+    <link rel="stylesheet" href="tracker_entry_results.css" >
+    <link rel="stylesheet" href="tracker_instructions_and_form.css" >
+    <link rel="stylesheet" href="tracker_pageWrapper_and_responsive.css" >
+</head>
+<body>
+    <!--Header of website: title, imgs, navbar-->
+    <header class="website-header">
+        <!--title and images-->
+        <div class="title-wrapper">
+            <img id="left-image"src="/WorkoutTracker/Images/WorkoutWebsiteLogo.png" alt="Forga's Logo" >
+            <h1> 
+                Forga's Workout and Macros Tracker
+            </h1>
+            <img id="right-image"src="/WorkoutTracker/Images/WorkoutWebsiteLogo.png" alt="Forga's Logo" >
+        </div>
+            <!--Navigation-->
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="/WorkoutTracker/homepage/index.html">Homepage</a></li>
+                <li><a href="/WorkoutTracker/workouts/workouts.html">Workouts</a></li>
+                <li><a href="/WorkoutTracker/tracker/tracker.html">Macros & Workout Tracker</a></li>
+                <li><a href="/WorkoutTracker/about/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="content-wrapper">
+
+        <div id="form-and-instructions-wrapper">
+            <section id="tracker-instructions">
+                <h2>Instructions</h2>
+                <p>
+                    Enter workout or macros information using the form. Enter in the date in the format of mm/dd/yyyy (Ex. 01/01/2024). Entered entries will appear green on
+                    the calendar. Clicking on the green calendar days will show entries for that day below the calendar. 
+                </p>
+            </section>
+
+
+            <!--Create calendar entry form-->
+            <form id="calendar-entry-form"action="" method="post">
+                <fieldset id="calendar-entry-info">
+                    <legend>Calendar Tracker Entry</legend>
+                    <div class="form-row">
+                        <label for="date-input">Date of entry:</label>
+                        <input type="text" id="date-input" placeholder="mm/dd/yyyy" pattern="\d{2}/\d{2}/\d{4}" required>
+                    </div>
+                
+                    <!--Create option box for type of entry-->
+                    <div class="form-row">
+                        <label for="entry-type">What type of entry?</label>
+                        <select name="entry-type" id="entry-type">
+                            <option value="Workout">Workout</option>
+                            <option value="Macro">Macros</option>
+                        </select>
+                    </div>
+                
+                    <!--Create text box for user to enter title of entry-->
+                    <div class="form-row">
+                        <label for="entryTitle">Enter the title of entry:</label>
+                        <input type="text" id="entry-title" name="entry-title" placeholder="Ex. Back Workout or Chicken and Rice Meal" size="35" required>
+                    </div>
+                
+                    <!--Create textarea for user to enter description of entry-->
+                    <div class="form-row">
+                        <label for="entry-description">Enter a description of the entry:</label><br>
+                        <textarea name="description" id="entry-description" rows="6" cols="65"
+                        placeholder="Ex. 3 sets of lat pulldowns (100-110-120 pounds)  &#10;Or &#10;The nutrition facts of the meal that was entered" required></textarea>
+                    </div>
+                
+                    <!--Create radioboxes for recommending to a friend-->
+                    <div class="form-row">
+                        <label>Would you recommend this entry to a friend?</label>
+                        <div class="recommend-select-options">
+                            <input name="entry-recommend" id="yes-recommend" value="Yes" type="radio">
+                            <label for="yes-recommend">Yes</label>
+                            <input name="entry-recommend" id="no-recommend" value="No" type="radio">
+                            <label for="no-recommend">No</label>
+                        </div>
+                    </div>
+                
+                    <!--Create submit button-->
+                    <div class="form-row">
+                        <input id="form-submit"value="Submit" type="submit" >
+                    </div>
+                
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="calendar-wrapper">
+            <table id="calendar"></table>
+        </div>
+
+        <div id="entry-results-wrapper"> 
+            <h2 id="entry-results-date-title"></h2>
+            <!--js file appending div called entry to entryResults containing 4 elements for form inputs-->
+            <div id="entry-results"></div>
+        </div>
+    </div>
+
+    <!--Footer section with copyright-->
+    <footer class="website-footer">
+        <a href="/index.html">Back to Bio and Project Webpage</a>
+        Created and maintained by Tyler Forga &copy;2023
+    </footer>
+    <script src="tracker.js"></script>
+</body>
+</html>

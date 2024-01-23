@@ -1,0 +1,69 @@
+/*
+* Custom CSS variables
+*/
+:root{
+    --bg-gradient-white-to-grey: linear-gradient(
+        to right, 
+        hsl(0, 0%, 100%) 0%, 
+        hsl(0, 0%, 42%) 100%
+    );
+
+    --icon-size: 50px;
+}
+
+
+body{
+    background: var(--bg-gradient-white-to-grey);
+}
+.content-wrapper{
+    margin-top: 5%;
+}
+.contact-info-wrapper{
+    background-color: white;
+}
+
+
+/*
+*   Contacts column CSS
+*/
+.separator{
+    width: 100%;
+    height: 1px;
+    margin: 5% 0;
+    background-color: black;
+}
+.contact-item{
+    display: flex;
+    margin: 2%;
+}
+.contact-item p{
+    margin: auto;
+    font-size: large;
+}
+.icon{
+    height: var(--icon-size);
+    width: var(--icon-size);
+}
+#icon-attributes{
+    font-size: 10px;
+}
+
+/*
+*   Nav Bar CSS
+*/
+.selectedNavItem{
+    color: orange;
+}
+
+
+/*
+* Individual page content CSS
+*/
+
+.individual-page-content{
+    background-color: white;
+    
+}
+.individual-page-content h2 {
+    text-align: center;
+}

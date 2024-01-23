@@ -1,0 +1,149 @@
+<!--
+    Author: Tyler Forga 
+    Date: 1/16/2023 
+    Filename: workouts.html 
+    Generate workouts based on muscle group. Create tabs of muscle groups which generate "cards" to showcase workout 
+        and provide instruction. 
+-->
+<!--HTML Boilerplate and title-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Workout Website</title>
+    <link rel="stylesheet" href="/WorkoutTracker/templates/template.css" >
+    <link rel="stylesheet" href="/WorkoutTracker/templates/template_responsive.css" >
+    <link rel="stylesheet" href="workouts.css" >
+    <link rel="stylesheet" href="workouts_responsive.css" >
+
+</head>
+<body>
+    <!--Header of website: title, imgs, navbar-->
+    <header class="website-header">
+        <!--title and images-->
+        <div class="title-wrapper">
+            <img id="left-image"src="/WorkoutTracker/Images/WorkoutWebsiteLogo.png" alt="Forga's Logo" >
+            <h1> 
+                Forga's Workout and Macros Tracker
+            </h1>
+            <img id="right-image"src="/WorkoutTracker/Images/WorkoutWebsiteLogo.png" alt="Forga's Logo" >
+        </div>
+            <!--Navigation-->
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="/WorkoutTracker/homepage/homepage.html">Homepage</a></li>
+                <li><a href="/WorkoutTracker/workouts/workouts.html">Workouts</a></li>
+                <li><a href="/WorkoutTracker/tracker/tracker.html">Macros & Workout Tracker</a></li>
+                <li><a href="/WorkoutTracker/about/about.html" >About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="workouts-form-wrapper">
+        <form class="search-and-filter-form">
+            <section id="workouts-search">
+                <label for="workouts-search-box">Search for exercise:</label>
+                <input type="text" id="workouts-search-box" placeholder="Bent-over row">
+                <input id="search-button" value="Search" type="submit" >
+            </section>
+
+            <section id="workout-filter">
+                <label for="workout-filter-menu">Filter by: </label>
+                <select name="workout-filter" id="workout-filter-menu">
+                    <option value="None"></option>
+                    <option value="Chest">Chest</option>
+                    <option value="Shoulders">Shoulders</option>
+                    <option value="Back">Back</option>
+                    <option value="Biceps">Biceps</option>
+                    <option value="Triceps">Triceps</option>
+                    <option value="Forearms">Forearms</option>
+                    <option value="Legs">Legs</option>
+                </select>
+            </section>
+        </form>
+    </div>
+    <!--Hardcode a few workout exercises for fillers. Recreate these exercises in an API/db so its interactive
+        TODO: Add video tutorial to each, create search options based on muscle groups(for api)-->
+    <div id="workouts-wrapper">
+        <section class="workout-card">
+            <h2>Exercise: Bench Press</h2>
+            <h3>Muscle Group Worked: Upper Body</h3>
+            <p>
+                Instructions:
+                Lie on your back on a flat bench. Grip a barbell with hands slightly wider than shoulder width. The bar should be directly over the shoulders.
+                Press your feet firmly into the ground and keep your hips on the bench throughout the entire movement.
+                Keep your core engaged and maintain a neutral spine position throughout the movement. Avoid arching your back.
+                Slowly lift the bar or dumbbells off the rack, if using. Lower the bar to the chest, about nipple level, allowing elbows to bend out to the side, about 45 degrees away from the body.
+                Stop lowering when your elbows are just below the bench. Press feet into the floor as you push the bar back up to return to starting position.
+                Perform 5 to 10 reps, depending on weight used. Perform up to 3 sets.
+            </p>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/gRVjAtPip0Y">
+                </iframe>
+            </div>
+        </section>
+        <section class="workout-card">
+            <h2>Exercise: Back Squat </h2>
+            <h3>Muscle Group Worked: Legs</h3>
+            <p>
+                Instructions: 
+                Place a barbell in a rack just below shoulder-height. Dip under the bar to put it behind the neck 
+                across the top of the back, and grip the bar with the hands wider than shoulder-width apart. Lift
+                the chest up and squeeze the shoulder blades together to keep the straight back throughout the
+                entire movement. Stand up to bring the bar off the rack and step backwards, then place the feet
+                so that they are a little wider than shoulder-width apart. Sit back into hips and keep the back
+                straight and the chest up, squatting down so the hips are below the knees. From the bottom of 
+                the squat, press feet into the ground and push hips forward to return to the top of the standing position.
+            </p>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/Dy28eq2PjcM">
+                </iframe>
+            </div>
+        </section>
+        <section class="workout-card">
+            <h2>Exercise: Lat Pulldown</h2>
+            <h3>Muscle Group Worked: Back</h3>
+            <p>
+                Instructions: 
+                Grasp the bar with a wide grip with an overhand, knuckles-up grip. Other positions and grips are possible but start with this standard position.
+                Pull the bar down until it's approximately level with the chin. Exhale on the downward motion. While shifting slightly backward is OK, aim to keep your upper torso stationary. Keep your feet flat on the floor and engage your abs as you pull. The bottom of the motion should be where your elbows can't move downward anymore without moving backward. Be sure to stop at that point and do not go lower.
+                Squeeze the shoulder blades together while maintaining square shoulders.
+                From the bottom position, with the bar close to your chin, slowly return the bar to the starting position while controlling its gradual ascent. Don't let it crash into the weight plates.
+                Continue until you complete eight to 12 repetitions in a set. Rest, then continue to complete your program of sets.
+            </p>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/an1BMInTXLk">
+                </iframe>
+            </div>
+        </section>
+        <section class="workout-card">
+            <h2>Exercise: Bicep Curl</h2>
+            <h3>Muscle Group Worked: Arms</h3>
+            <p>
+                Instructions:
+                Stand with feet about hip-width apart, abs engaged as you hold medium-heavy dumbbells in front of the thighs. Palms should face forward.
+                Squeeze the biceps and bend the arms, curling the weights towards the shoulders.
+                Keep the elbows stationary and only bring the weight as high as you can without moving the elbows.
+                Slowly lower the weights, keeping a slight bend in the elbows at the bottom (e.g., don't lock the joints and try to keep tension on the muscle)
+                Repeat for 1-3 sets of 8-15 reps.
+            </p>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/Zjv0tiMjkJU">
+                </iframe>
+            </div>
+        </section>
+    </div>
+
+    <!--Footer section with copyright-->
+    <footer class="website-footer">
+        <a href="/index.html">Back to Bio and Project Webpage</a>
+        Created and maintained by Tyler Forga &copy;2023
+    </footer>
+</body>
+</html>

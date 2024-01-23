@@ -1,0 +1,14 @@
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\bin\Debug\ConcertTracker.exe.config
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\bin\Debug\ConcertTracker.exe
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\bin\Debug\ConcertTracker.pdb
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\obj\Debug\ConcertTracker.csprojAssemblyReference.cache
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\obj\Debug\ConcertTracker.MainForm.resources
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\obj\Debug\ConcertTracker.Properties.Resources.resources
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\obj\Debug\ConcertTracker.csproj.GenerateResource.cache
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\obj\Debug\ConcertTracker.csproj.CoreCompileInputs.cache
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\obj\Debug\ConcertTracker.exe
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\obj\Debug\ConcertTracker.pdb
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\obj\Debug\ConcertTracker.ViewConcerts.resources
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\bin\Debug\Newtonsoft.Json.dll
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\bin\Debug\Newtonsoft.Json.xml
+C:\Users\forga\source\repos\ConcertTracker\ConcertTracker\obj\Debug\ConcertTracker.csproj.CopyComplete

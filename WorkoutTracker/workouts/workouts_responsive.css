@@ -1,0 +1,21 @@
+@media screen and (max-width: 1400px){
+    .workout-card p{
+        margin-bottom: 180px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .workout-card{
+        min-height: 300px;
+        min-width: 300px;
+        
+    }
+}
+@media screen and (max-width: 430px){
+    .workout-card{
+        width: 70%;
+        min-height: 200px;
+        min-width: 200px;
+        
+    }
+}

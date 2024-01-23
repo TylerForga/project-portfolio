@@ -1,0 +1,93 @@
+body{
+    margin: 0;    
+    padding: 0;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/Images/personWeightlifting.png');
+    background-repeat: repeat;
+    z-index: -1;
+    opacity: .1;
+}
+.website-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: tan;
+}
+.title-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    border: 2px solid black;
+}
+.website-header h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 70px;
+    margin: 2% auto 2% auto;
+}
+.website-header img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.website-header #left-image{
+    padding-left: 2%;
+}
+.website-header #right-image{
+    padding-right: 2%;
+}
+.navigation-bar{
+    background-color: lightgrey;
+    width: 100%;
+    position: relative;
+}
+.navigation-bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    
+}
+.navigation-bar li{
+    border-width: 0px 2px 2px 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 0 -3px;
+
+}
+.navigation-bar li a{
+    display: inline-block;
+    background-color: lightgrey;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+.navigation-bar a:hover{
+    background-color: bisque;
+}
+
+.website-footer{
+    position:absolute;
+    width: 100%;
+    padding: 1%;
+    border: 2px solid black;
+    box-sizing:border-box;
+    background-color: tan;
+    text-align: center;
+}
+.website-footer a{
+    position: absolute;
+    left: 0;
+}

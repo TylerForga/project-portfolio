@@ -1,0 +1,76 @@
+@media screen and (max-width: 1100px){
+    .website-header h1{
+        font-size: 60px;
+    }
+    .website-header img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    /*
+        Website header does funky repositioning at 716px width, make elements smaller at this width
+    */
+    .website-header h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 630px){
+    /*
+        Navigation bar goes off screen/isn't centered at 526px width, make elements smaller and reposition to center
+    */
+    .website-header h1{
+        font-size: 40px;
+    }
+    .website-header img{
+        width: 60px;
+        height: 60px;
+    }
+
+}
+@media screen and (max-width: 535px){
+    /*
+        Navigation bar goes off screen/isn't centered at 526px width, make elements smaller and reposition to center
+    */
+    .website-header h1{
+        font-size: 30px;
+    }
+    .website-header img{
+        width: 50px;
+        height: 50px;
+    }
+    .navigation-bar ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navigation-bar li{
+        margin: 0;
+    }
+    .navigation-bar li a{
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    /*
+        Navigation bar goes off screen/isn't centered at 526px width, make elements smaller and reposition to center
+    */
+    .website-header img{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 350px){
+    /*
+        Navigation bar goes off screen/isn't centered at 526px width, make elements smaller and reposition to center
+    */
+    .website-header h1{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,45 @@
+#entry-results-wrapper{
+    text-align: center;
+    margin-bottom: 3%;
+}
+#entry-results{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#entry-results-date-title{
+    background-color: tan;
+    width: 150px;
+    padding: 10px;
+    margin: 2% auto;
+    display: none;
+    text-decoration: underline;
+}
+.entry {
+    background-color: tan;
+    min-width: 200px;
+    min-height: 250px;
+    width: 20%;
+    border: 2px solid black;
+    margin: 5px;
+    position: relative;
+    padding-bottom: 1%;
+}
+.entry-content{
+    position: relative;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.no-entry-content{
+    background-color: tan;
+    border: 2px solid black;
+    padding: 0 10px;
+    margin-top: 5px;
+}
+.delete-button {
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+}

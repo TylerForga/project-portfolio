@@ -1,0 +1,24 @@
+#content-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    justify-content: center;
+}
+.homepage-about-content{
+    background-color: tan;
+    margin: 0;
+    padding: 2%;
+    width: 40%;
+}
+.homepage-about-content h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 0;
+}
+.homepage-about-content p, .homepage-about-content li{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+

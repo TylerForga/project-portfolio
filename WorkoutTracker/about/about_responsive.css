@@ -1,0 +1,98 @@
+@media screen and (max-width: 1425px){
+    .content-cards{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1175px){
+    .content-cards{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    #content-wrapper{
+        width: 75%;
+        margin: 5% auto;
+    }
+    .content-cards{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 775px){
+    .content-cards{
+        flex-direction: column;
+        position: relative;
+        margin: 5% 0;
+    }
+    .content-card-label{
+        position: absolute;
+        width: 100%;
+        min-height: 20%;
+    }
+    .content-cards p{
+        padding-top: 5%;        
+    }
+    textarea{
+        padding-top: 13%;
+    }
+}
+
+@media screen and (max-width: 656px){
+    .content-card-label{
+        min-height: 25%;
+    }
+    .content-cards p{
+        padding-top: 10%;        
+    }
+    textarea{
+        padding-top: 18%;
+    }
+}
+
+@media screen and (max-width: 589px){
+    .content-card-label{
+        min-height: 20%;
+    }
+    .content-cards h2{
+        font-size: 25px;
+    }
+    .content-cards p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 415px){
+    .content-card-label{
+        min-height: 17%;
+    }
+    .content-cards h2{
+        font-size: 22px;
+    }
+    .content-cards p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 321px){
+    .content-card-label{
+        min-height: 20%;
+    }
+    .content-cards h2{
+        font-size: 18px;
+    }
+    .content-cards p{
+        font-size: 12px;
+    }
+    textarea{
+        padding-top: 28%;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 275px){
+    .content-cards p{
+        padding-top: 15%;        
+    }
+    textarea{
+        padding-top: 32%;
+    }
+}

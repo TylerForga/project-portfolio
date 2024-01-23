@@ -1,0 +1,63 @@
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 775px){
+    /*Table starts pushing elements in funky way at 630px width. Make table smaller by decreasing table padding
+        and table's title size */
+    #form-and-instructions-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    #tracker-instructions p{
+        padding: 0 10%;
+    }
+
+    #calendar caption{
+        font-size: 3em;
+    }
+    #calendar th {
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 550px){
+    /*Table starts pushing elements again at 492px width. Resize smaller again. NavBar overlaps table at this width,
+        so reposition table lower on screen*/
+
+    .form-row{
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    .form-row textarea{
+        width: 80%;
+    }
+    #form-submit{
+        float: right;
+    }
+
+    #calendar caption{
+        font-size: 2em;
+    }
+    #calendar th {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    /*Table starts pushing elements again at 492px width. Resize smaller again. NavBar overlaps table at this width,
+        so reposition table lower on screen*/
+
+    #calendar caption{
+        font-size: 1.5em;
+    }
+    #calendar th {
+        font-size: 12px;
+        padding: 2px;
+    }
+    #calendar td {
+        padding: 10px;
+    }
+}

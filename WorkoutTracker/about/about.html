@@ -1,0 +1,91 @@
+<!--
+    Author: Tyler Forga 
+    Date: 1/16/2023 
+    Filename: about.html 
+    Login page so you can use the tracker. Otherwise everyone's workouts and micros will be on same tracker. RESEARCH THIS!!!
+-->
+<!--HTML Boilerplate and title-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Workout Website</title>
+    <link rel="stylesheet" href="/WorkoutTracker/templates/template.css" >
+    <link rel="stylesheet" href="/WorkoutTracker/templates/template_responsive.css" >
+    <link rel="stylesheet" href="about.css" >
+    <link rel="stylesheet" href="about_animations.css" >
+    <link rel="stylesheet" href="about_responsive.css" >
+</head>
+<body>
+    <!--Header of website: title, imgs, navbar-->
+    <header class="website-header">
+        <!--title and images-->
+        <div class="title-wrapper">
+            <img id="left-image"src="/WorkoutTracker/Images/WorkoutWebsiteLogo.png" alt="Forga's Logo" >
+            <h1> 
+                Forga's Workout and Macros Tracker
+            </h1>
+            <img id="right-image"src="/WorkoutTracker/Images/WorkoutWebsiteLogo.png" alt="Forga's Logo" >
+        </div>
+            <!--Navigation-->
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="/WorkoutTracker/homepage/homepage.html">Homepage</a></li>
+                <li><a href="/WorkoutTracker/workouts/workouts.html">Workouts</a></li>
+                <li><a href="/WorkoutTracker/tracker/tracker.html">Macros & Workout Tracker</a></li>
+                <li><a href="/WorkoutTracker/about/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Page content area. Make several sections for filler content. Will recreate this page when finish with course project
+        TODO: Add contact info. Add some unique CSS animations. Ideas: stick figure doing exercises, animations to content areas.-->
+    <div id="content-wrapper">
+
+        <div class="content-area-left">
+            <div class="content-cards">
+                <p>
+                    I've seen workout apps before, but none that I've seen that allow for tracking progress with marcos and workouts easily. With my website 
+                    application, it allows exactly that. It provides a centralized location to track workouts and macros while allowing users
+                    to lookup different workout exercises.  
+                </p>
+                <div class="content-card-label">
+                    <h2>Why create this website?</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-area-right">
+            <div class="content-cards">
+                <div class="content-card-label">
+                    <h2>About Me</h2>
+                </div>
+                <p>
+                    I'm Tyler Forga, an aspiring software developer. I have been interested in bodybuilding for the last few years, which is where
+                    I got the idea for a workout website application. I was born and raised in Minnesota, and I'm currently 25 years old.
+                </p>
+            </div>
+        </div>
+
+        <div class="content-area-left">
+            <div class="content-cards">
+                <section id="questions-comments-concerns-content">
+                    <textarea placeholder="Enter text here..." ></textarea>
+                    <button id="submitConcernsButton">Submit</button>
+                </section>
+                <div class="content-card-label">
+                    <h2>Questions, Comments, Concerns</h2>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!--Footer section with copyright-->
+    <footer class="website-footer">
+        <a href="/index.html">Back to Bio and Project Webpage</a>
+        Created and maintained by Tyler Forga &copy;2023
+    </footer>
+</body>
+</html>
