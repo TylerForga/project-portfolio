@@ -9,7 +9,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/Images/personWeightlifting.png');
+    background-image: url('/project-portfolio/WorkoutTracker/Images/personWeightlifting.png');
     background-repeat: repeat;
     z-index: -1;
     opacity: .1;
